@@ -292,7 +292,7 @@ export default function HomePage() {
             fontSize: 'clamp(1rem, 2vw, 1.25rem)', color: '#7aa8cc', lineHeight: 1.7,
             maxWidth: '640px', margin: '0 auto 40px',
           }}>
-            GeBeCert embeds military-grade microchips into every product, creating an immutable digital twin on the blockchain. Fake products simply cease to exist.
+            GeBeCert uses QR codes with activation PINs to verify authenticity and track products. Simple scan with any phone - no special app needed. Fake products are instantly detected.
           </p>
 
           <div className="fade-in-up fade-in-up-delay-3" style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -358,9 +358,9 @@ export default function HomePage() {
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '80px' }}>
             <p style={{ color: '#1780e3', fontSize: '0.85rem', fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '16px' }}>The Solution</p>
-            <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, letterSpacing: '-1px', marginBottom: '20px' }}>Dual-Layer Protection</h2>
+            <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, letterSpacing: '-1px', marginBottom: '20px' }}>Triple Protection</h2>
             <p style={{ color: '#7aa8cc', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto', lineHeight: 1.7 }}>
-              Combining hardware security with immutable blockchain technology — two independent layers of trust.
+              QR codes + Activation PIN + Blockchain. Three layers of security that work with any smartphone - no special hardware or apps needed.
             </p>
             <div className="line-accent" style={{ margin: '20px auto 0' }} />
           </div>
@@ -368,13 +368,13 @@ export default function HomePage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '32px' }}>
             <div className="glass-card" style={{ padding: '48px 40px', borderRadius: '24px', position: 'relative', overflow: 'hidden' }}>
               <div style={{ position: 'absolute', top: '-40px', right: '-40px', width: '180px', height: '180px', background: 'radial-gradient(circle, rgba(23, 128, 227, 0.15) 0%, transparent 70%)', pointerEvents: 'none' }} />
-              <div style={{ color: '#76afe5', marginBottom: '24px' }}><ChipIcon size={64} /></div>
-              <h3 style={{ fontSize: '1.6rem', fontWeight: 800, color: 'white', marginBottom: '14px' }}>Microchip Authentication</h3>
+              <div style={{ color: '#76afe5', marginBottom: '24px' }}><QRCodeIcon size={64} /></div>
+              <h3 style={{ fontSize: '1.6rem', fontWeight: 800, color: 'white', marginBottom: '14px' }}>QR + PIN Activation</h3>
               <p style={{ color: '#7aa8cc', fontSize: '0.95rem', lineHeight: 1.7, marginBottom: '28px' }}>
-                Each product receives a unique, tamper-proof NFC or RFID microchip with cryptographic keys that cannot be cloned or replicated.
+                Each product has a unique QR code with a hidden PIN under scratch-off. Consumer scratches to reveal PIN, enters it online - activating ownership. Counterfeit codes don't work.
               </p>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                {['Military-grade encryption', 'Tamper-evident design', 'Unique cryptographic identity', 'Instant NFC scanning'].map(item => (
+                {['Works with any smartphone', 'No special app needed', 'One-time PIN activation', 'Scratch-off security'].map(item => (
                   <li key={item} style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#a0c4e8', fontSize: '0.9rem' }}>
                     <span style={{ color: '#1780e3', fontSize: '1.2rem' }}>✓</span> {item}
                   </li>
@@ -387,10 +387,10 @@ export default function HomePage() {
               <div style={{ color: '#76afe5', marginBottom: '24px' }}><BlockchainIcon size={64} /></div>
               <h3 style={{ fontSize: '1.6rem', fontWeight: 800, color: 'white', marginBottom: '14px' }}>Blockchain Verification</h3>
               <p style={{ color: '#7aa8cc', fontSize: '0.95rem', lineHeight: 1.7, marginBottom: '28px' }}>
-                Every product&apos;s lifecycle — from manufacturing to end consumer — is permanently recorded on an immutable, distributed ledger.
+                Every product's journey is permanently recorded - from manufacturing to end consumer. Activation data stored on immutable blockchain.
               </p>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                {['Immutable audit trail', 'Public verification portal', 'Supply chain transparency', 'Zero-tolerance for fakes'].map(item => (
+                {['Activation rate tracking', 'Geographic verification', 'Ownership transfers', 'Grey market detection'].map(item => (
                   <li key={item} style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#a0c4e8', fontSize: '0.9rem' }}>
                     <span style={{ color: '#1780e3', fontSize: '1.2rem' }}>✓</span> {item}
                   </li>
