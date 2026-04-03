@@ -375,7 +375,7 @@ export default function HomePage() {
                 Each product has a unique QR code with hidden PIN under scratch-off. Consumer scratches to reveal, enters online - activating ownership.
               </p>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                {['Works with any smartphone', 'No special app needed', 'One-time PIN activation', 'Scratch-off security', '$0.005-0.01 per product'].map(item => (
+                {['Works with any smartphone', 'No special app needed', 'One-time PIN activation', 'Scratch-off security'].map(item => (
                   <li key={item} style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#a0c4e8', fontSize: '0.85rem' }}>
                     <span style={{ color: '#1780e3', fontSize: '1.1rem' }}>✓</span> {item}
                   </li>
