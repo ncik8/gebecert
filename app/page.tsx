@@ -487,6 +487,68 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── PRICING ── */}
+      <section className="section-reveal" id="pricing" style={{ padding: '120px 24px' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+            <p style={{ color: '#1780e3', fontSize: '0.85rem', fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '16px' }}>Pricing</p>
+            <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, letterSpacing: '-1px', marginBottom: '20px' }}>Start Free, Scale When Ready</h2>
+            <p style={{ color: '#7aa8cc', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto', lineHeight: 1.7 }}>
+              Design and print your own QR codes free. Upgrade when you need customer insights.
+            </p>
+            <div className="line-accent" style={{ margin: '20px auto 0' }} />
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+            {/* FREE Plan */}
+            <div className="glass-card" style={{ padding: '40px 32px', borderRadius: '24px' }}>
+              <div style={{ fontSize: '0.85rem', fontWeight: 600, color: '#76afe5', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '12px' }}>Starter</div>
+              <div style={{ fontSize: '3rem', fontWeight: 800, color: 'white', marginBottom: '8px' }}>FREE</div>
+              <p style={{ color: '#7aa8cc', fontSize: '0.9rem', marginBottom: '28px' }}>For small brands getting started</p>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '14px', marginBottom: '32px' }}>
+                {['Design up to 1,000 QR codes/month', 'Add brand name & logo', 'Include website & expiry date', 'Basic verification page', 'Consumer sees: Genuine ✓'].map(item => (
+                  <li key={item} style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#a0c4e8', fontSize: '0.88rem' }}>
+                    <span style={{ color: '#1780e3', fontSize: '1.1rem' }}>✓</span> {item}
+                  </li>
+                ))}
+              </ul>
+              <a href="#contact" style={{ display: 'block', textAlign: 'center', padding: '14px', borderRadius: '12px', border: '1px solid #334155', color: 'white', textDecoration: 'none', fontWeight: 600 }}>Get Started Free</a>
+            </div>
+
+            {/* PRO Plan */}
+            <div className="glass-card" style={{ padding: '40px 32px', borderRadius: '24px', border: '2px solid #1780e3', position: 'relative' }}>
+              <div style={{ position: 'absolute', top: '-12px', left: '50%', transform: 'translateX(-50%)', background: '#1780e3', color: 'white', padding: '4px 16px', borderRadius: '20px', fontSize: '0.75rem', fontWeight: 600 }}>MOST POPULAR</div>
+              <div style={{ fontSize: '0.85rem', fontWeight: 600, color: '#76afe5', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '12px' }}>Professional</div>
+              <div style={{ fontSize: '3rem', fontWeight: 800, color: 'white', marginBottom: '8px' }}>$99<span style={{ fontSize: '1rem', fontWeight: 400, color: '#7aa8cc' }}>/month</span></div>
+              <p style={{ color: '#7aa8cc', fontSize: '0.9rem', marginBottom: '28px' }}>For growing brands</p>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '14px', marginBottom: '32px' }}>
+                {['Everything in Starter', 'Unlimited QR codes', 'Consumer email capture', 'Data dashboard', 'Product images & video', 'Brand story page'].map(item => (
+                  <li key={item} style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#a0c4e8', fontSize: '0.88rem' }}>
+                    <span style={{ color: '#1780e3', fontSize: '1.1rem' }}>✓</span> {item}
+                  </li>
+                ))}
+              </ul>
+              <a href="#contact" style={{ display: 'block', textAlign: 'center', padding: '14px', borderRadius: '12px', background: '#1780e3', color: 'white', textDecoration: 'none', fontWeight: 600 }}>Start Free Trial</a>
+            </div>
+
+            {/* ENTERPRISE Plan */}
+            <div className="glass-card" style={{ padding: '40px 32px', borderRadius: '24px' }}>
+              <div style={{ fontSize: '0.85rem', fontWeight: 600, color: '#76afe5', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '12px' }}>Enterprise</div>
+              <div style={{ fontSize: '3rem', fontWeight: 800, color: 'white', marginBottom: '8px' }}>Custom</div>
+              <p style={{ color: '#7aa8cc', fontSize: '0.9rem', marginBottom: '28px' }}>For luxury brands & corporations</p>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '14px', marginBottom: '32px' }}>
+                {['Everything in Professional', 'AI fraud detection', 'HF chip integration', 'White-label option', 'API access', 'Dedicated support'].map(item => (
+                  <li key={item} style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#a0c4e8', fontSize: '0.88rem' }}>
+                    <span style={{ color: '#1780e3', fontSize: '1.1rem' }}>✓</span> {item}
+                  </li>
+                ))}
+              </ul>
+              <a href="#contact" style={{ display: 'block', textAlign: 'center', padding: '14px', borderRadius: '12px', border: '1px solid #334155', color: 'white', textDecoration: 'none', fontWeight: 600 }}>Contact Sales</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA ── */}
       <section className="section-reveal" id="contact" style={{ padding: '120px 24px', background: 'linear-gradient(180deg, rgba(8, 48, 86, 0.15) 0%, rgba(8, 48, 86, 0.25) 100%)' }}>
         <div style={{ maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
