@@ -283,7 +283,7 @@ export default function HomePage() {
             fontSize: 'clamp(2.8rem, 7vw, 5.5rem)', fontWeight: 800, lineHeight: 1.1,
             letterSpacing: '-2px', marginBottom: '24px',
           }}>
-            End Counterfeiting{' '}
+            End Counterfeiting Forever
             <span className="text-gradient">Forever</span>
             <br />with Blockchain
           </h1>
@@ -292,7 +292,7 @@ export default function HomePage() {
             fontSize: 'clamp(1rem, 2vw, 1.25rem)', color: '#7aa8cc', lineHeight: 1.7,
             maxWidth: '640px', margin: '0 auto 40px',
           }}>
-            GeBeCert uses QR codes with activation PINs to verify authenticity and track products. Simple scan with any phone - no special app needed. Fake products are instantly detected.
+            Two solutions for every budget: QR + PIN for mass market, or HF chip technology for luxury brands. Both verified on blockchain.
           </p>
 
           <div className="fade-in-up fade-in-up-delay-3" style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -358,41 +358,59 @@ export default function HomePage() {
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: '80px' }}>
             <p style={{ color: '#1780e3', fontSize: '0.85rem', fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '16px' }}>The Solution</p>
-            <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, letterSpacing: '-1px', marginBottom: '20px' }}>Triple Protection</h2>
+            <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, letterSpacing: '-1px', marginBottom: '20px' }}>Solutions for Every Brand</h2>
             <p style={{ color: '#7aa8cc', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto', lineHeight: 1.7 }}>
-              QR codes + Activation PIN + Blockchain. Three layers of security that work with any smartphone - no special hardware or apps needed.
+              Whether you sell alcohol or luxury watches, we have a solution that fits your budget and security needs.
             </p>
             <div className="line-accent" style={{ margin: '20px auto 0' }} />
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '32px' }}>
-            <div className="glass-card" style={{ padding: '48px 40px', borderRadius: '24px', position: 'relative', overflow: 'hidden' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
+            <div className="glass-card" style={{ padding: '40px 32px', borderRadius: '24px', position: 'relative', overflow: 'hidden' }}>
               <div style={{ position: 'absolute', top: '-40px', right: '-40px', width: '180px', height: '180px', background: 'radial-gradient(circle, rgba(23, 128, 227, 0.15) 0%, transparent 70%)', pointerEvents: 'none' }} />
-              <div style={{ color: '#76afe5', marginBottom: '24px' }}><QRCodeIcon size={64} /></div>
-              <h3 style={{ fontSize: '1.6rem', fontWeight: 800, color: 'white', marginBottom: '14px' }}>QR + PIN Activation</h3>
-              <p style={{ color: '#7aa8cc', fontSize: '0.95rem', lineHeight: 1.7, marginBottom: '28px' }}>
-                Each product has a unique QR code with a hidden PIN under scratch-off. Consumer scratches to reveal PIN, enters it online - activating ownership. Counterfeit codes don't work.
+              <div style={{ display: 'inline-block', background: '#1780e3', color: 'white', padding: '4px 12px', borderRadius: '20px', fontSize: '0.75rem', fontWeight: 600, marginBottom: '16px' }}>MASS MARKET</div>
+              <div style={{ color: '#76afe5', marginBottom: '20px' }}><QRCodeIcon size={56} /></div>
+              <h3 style={{ fontSize: '1.4rem', fontWeight: 800, color: 'white', marginBottom: '12px' }}>QR + PIN Activation</h3>
+              <p style={{ color: '#7aa8cc', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: '20px' }}>
+                Each product has a unique QR code with hidden PIN under scratch-off. Consumer scratches to reveal, enters online - activating ownership.
               </p>
-              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                {['Works with any smartphone', 'No special app needed', 'One-time PIN activation', 'Scratch-off security'].map(item => (
-                  <li key={item} style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#a0c4e8', fontSize: '0.9rem' }}>
-                    <span style={{ color: '#1780e3', fontSize: '1.2rem' }}>✓</span> {item}
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                {['Works with any smartphone', 'No special app needed', 'One-time PIN activation', 'Scratch-off security', '$0.005-0.01 per product'].map(item => (
+                  <li key={item} style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#a0c4e8', fontSize: '0.85rem' }}>
+                    <span style={{ color: '#1780e3', fontSize: '1.1rem' }}>✓</span> {item}
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="glass-card" style={{ padding: '48px 40px', borderRadius: '24px', position: 'relative', overflow: 'hidden' }}>
-              <div style={{ position: 'absolute', top: '-40px', right: '-40px', width: '180px', height: '180px', background: 'radial-gradient(circle, rgba(118, 175, 229, 0.1) 0%, transparent 70%)', pointerEvents: 'none' }} />
-              <div style={{ color: '#76afe5', marginBottom: '24px' }}><BlockchainIcon size={64} /></div>
-              <h3 style={{ fontSize: '1.6rem', fontWeight: 800, color: 'white', marginBottom: '14px' }}>Blockchain Verification</h3>
-              <p style={{ color: '#7aa8cc', fontSize: '0.95rem', lineHeight: 1.7, marginBottom: '28px' }}>
-                Every product's journey is permanently recorded - from manufacturing to end consumer. Activation data stored on immutable blockchain.
+            <div className="glass-card" style={{ padding: '40px 32px', borderRadius: '24px', position: 'relative', overflow: 'hidden', border: '2px solid #1780e3' }}>
+              <div style={{ position: 'absolute', top: '-40px', right: '-40px', width: '180px', height: '180px', background: 'radial-gradient(circle, rgba(118, 175, 229, 0.15) 0%, transparent 70%)', pointerEvents: 'none' }} />
+              <div style={{ display: 'inline-block', background: 'linear-gradient(135deg, #1780e3, #76afe5)', color: 'white', padding: '4px 12px', borderRadius: '20px', fontSize: '0.75rem', fontWeight: 600, marginBottom: '16px' }}>LUXURY BRANDS</div>
+              <div style={{ color: '#76afe5', marginBottom: '20px' }}><ChipIcon size={56} /></div>
+              <h3 style={{ fontSize: '1.4rem', fontWeight: 800, color: 'white', marginBottom: '12px' }}>HF Chip Technology</h3>
+              <p style={{ color: '#7aa8cc', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: '20px' }}>
+                High-frequency NFC chips embedded in product. Patent-registered technology with advanced encryption. For luxury watches, handbags, jewelry.
               </p>
-              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                {['Patent-registered technology', 'Military-grade encryption', 'Supply chain tracking', 'Ownership transfer app', 'Full data dashboard'].map(item => (
+                  <li key={item} style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#a0c4e8', fontSize: '0.85rem' }}>
+                    <span style={{ color: '#1780e3', fontSize: '1.1rem' }}>✓</span> {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="glass-card" style={{ padding: '40px 32px', borderRadius: '24px', position: 'relative', overflow: 'hidden' }}>
+              <div style={{ position: 'absolute', top: '-40px', right: '-40px', width: '180px', height: '180px', background: 'radial-gradient(circle, rgba(118, 175, 229, 0.1) 0%, transparent 70%)', pointerEvents: 'none' }} />
+              <div style={{ color: '#76afe5', marginBottom: '20px' }}><BlockchainIcon size={56} /></div>
+              <h3 style={{ fontSize: '1.4rem', fontWeight: 800, color: 'white', marginBottom: '12px' }}>Blockchain Verification</h3>
+              <p style={{ color: '#7aa8cc', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: '20px' }}>
+                Both solutions verified on immutable blockchain. Complete audit trail from manufacturing to end consumer.
+              </p>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 {['Activation rate tracking', 'Geographic verification', 'Ownership transfers', 'Grey market detection'].map(item => (
-                  <li key={item} style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#a0c4e8', fontSize: '0.9rem' }}>
-                    <span style={{ color: '#1780e3', fontSize: '1.2rem' }}>✓</span> {item}
+                  <li key={item} style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#a0c4e8', fontSize: '0.85rem' }}>
+                    <span style={{ color: '#1780e3', fontSize: '1.1rem' }}>✓</span> {item}
                   </li>
                 ))}
               </ul>
