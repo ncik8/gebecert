@@ -1,7 +1,5 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  outputFileTracingRoot: "/Users/nick/.openclaw/workspace/projects/gebecert",
-};
+const nextConfig: NextConfig = {};
 
 export default nextConfig;
